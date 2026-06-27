@@ -1,0 +1,137 @@
+<svg viewBox="0 0 860 540" xmlns="http://www.w3.org/2000/svg" role="img" font-family="Arial, sans-serif">
+  <title>Northern Shift Guard — System Architecture</title>
+  <desc>End-to-end pipeline from worker photo upload through GPT-4o vision, zone compliance, Nemotron reasoning, TiDB audit, and back to the UI</desc>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="#1a1a1a" rx="12"/>
+
+  <!-- Title -->
+  <text x="430" y="36" text-anchor="middle" fill="#f97316" font-size="15" font-weight="bold" letter-spacing="2">NORTHERN SHIFT GUARD — SYSTEM ARCHITECTURE</text>
+  <text x="430" y="54" text-anchor="middle" fill="#6b7280" font-size="10">NorthMind · Cursor Hackathon Sudbury 2026</text>
+
+  <!-- Layer Labels -->
+  <text x="34" y="105" fill="#6b7280" font-size="9" font-weight="bold" letter-spacing="1">FRONTEND</text>
+  <text x="34" y="225" fill="#6b7280" font-size="9" font-weight="bold" letter-spacing="1">BACKEND</text>
+  <text x="34" y="345" fill="#6b7280" font-size="9" font-weight="bold" letter-spacing="1">AI LAYER</text>
+  <text x="34" y="465" fill="#6b7280" font-size="9" font-weight="bold" letter-spacing="1">STORAGE</text>
+
+  <!-- Lane separators -->
+  <line x1="100" y1="70" x2="840" y2="70" stroke="#2a2a2a" stroke-width="1"/>
+  <line x1="100" y1="190" x2="840" y2="190" stroke="#2a2a2a" stroke-width="1"/>
+  <line x1="100" y1="310" x2="840" y2="310" stroke="#2a2a2a" stroke-width="1"/>
+  <line x1="100" y1="430" x2="840" y2="430" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- FRONTEND LAYER -->
+  <rect x="110" y="82" width="120" height="88" rx="8" fill="#1f1f1f" stroke="#f97316" stroke-width="1.5"/>
+  <text x="170" y="108" text-anchor="middle" fill="#f97316" font-size="22">&#128247;</text>
+  <text x="170" y="128" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">Worker Photo</text>
+  <text x="170" y="143" text-anchor="middle" fill="#9ca3af" font-size="9">Upload / capture</text>
+  <text x="170" y="158" text-anchor="middle" fill="#9ca3af" font-size="9">JPG · PNG · WEBP</text>
+
+  <rect x="265" y="82" width="120" height="88" rx="8" fill="#1f1f1f" stroke="#f97316" stroke-width="1.5"/>
+  <text x="325" y="108" text-anchor="middle" fill="#f97316" font-size="22">&#128205;</text>
+  <text x="325" y="128" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">Zone Selector</text>
+  <text x="325" y="143" text-anchor="middle" fill="#9ca3af" font-size="9">Surface · Open Pit</text>
+  <text x="325" y="158" text-anchor="middle" fill="#9ca3af" font-size="9">Underground · Stope</text>
+
+  <rect x="680" y="82" width="150" height="88" rx="8" fill="#1f1f1f" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="755" y="108" text-anchor="middle" fill="#3b82f6" font-size="22">&#128421;</text>
+  <text x="755" y="128" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">React Dashboard</text>
+  <text x="755" y="143" text-anchor="middle" fill="#9ca3af" font-size="9">Zone compliance panel</text>
+  <text x="755" y="158" text-anchor="middle" fill="#9ca3af" font-size="9">Evidence · Action · Audit</text>
+
+  <!-- BACKEND LAYER -->
+  <rect x="340" y="202" width="180" height="76" rx="8" fill="#1f1f1f" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="430" y="228" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold">FastAPI Backend</text>
+  <text x="430" y="244" text-anchor="middle" fill="#9ca3af" font-size="9">POST /api/analyze</text>
+  <text x="430" y="259" text-anchor="middle" fill="#9ca3af" font-size="9">GET /api/scans · GET /api/zones</text>
+  <text x="430" y="272" text-anchor="middle" fill="#6b7280" font-size="8">Uvicorn · Pydantic schemas</text>
+
+  <!-- AI LAYER -->
+  <rect x="110" y="322" width="148" height="88" rx="8" fill="#1f1f1f" stroke="#10b981" stroke-width="1.5"/>
+  <text x="184" y="348" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">GPT-4o Vision</text>
+  <text x="184" y="363" text-anchor="middle" fill="#9ca3af" font-size="9">Hard hat · Hi-vis vest</text>
+  <text x="184" y="377" text-anchor="middle" fill="#9ca3af" font-size="9">Fatigue indicators</text>
+  <text x="184" y="391" text-anchor="middle" fill="#6b7280" font-size="8">Structured JSON evidence</text>
+  <text x="184" y="403" text-anchor="middle" fill="#6b7280" font-size="8">OpenAI API</text>
+
+  <rect x="286" y="322" width="148" height="88" rx="8" fill="#1f1f1f" stroke="#f97316" stroke-width="1.5"/>
+  <text x="360" y="345" text-anchor="middle" fill="#f97316" font-size="10" font-weight="bold">Zone Compliance</text>
+  <text x="360" y="359" text-anchor="middle" fill="#f97316" font-size="10" font-weight="bold">Engine</text>
+  <text x="360" y="374" text-anchor="middle" fill="#9ca3af" font-size="9">Detected PPE vs</text>
+  <text x="360" y="388" text-anchor="middle" fill="#9ca3af" font-size="9">zone requirements</text>
+  <text x="360" y="402" text-anchor="middle" fill="#6b7280" font-size="8">Ontario Reg 854</text>
+
+  <rect x="462" y="322" width="148" height="88" rx="8" fill="#1f1f1f" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="536" y="348" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="bold">Nemotron</text>
+  <text x="536" y="363" text-anchor="middle" fill="#9ca3af" font-size="9">Evidence + zone context</text>
+  <text x="536" y="377" text-anchor="middle" fill="#9ca3af" font-size="9">Supervisor action</text>
+  <text x="536" y="391" text-anchor="middle" fill="#9ca3af" font-size="9">stop_work · intervene</text>
+  <text x="536" y="405" text-anchor="middle" fill="#6b7280" font-size="8">NVIDIA + GPT-4o-mini fallback</text>
+
+  <rect x="638" y="322" width="130" height="88" rx="8" fill="#1f1f1f" stroke="#6b7280" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="703" y="348" text-anchor="middle" fill="#9ca3af" font-size="11" font-weight="bold">Safety Context</text>
+  <text x="703" y="363" text-anchor="middle" fill="#6b7280" font-size="9">OSHA mining PPE</text>
+  <text x="703" y="377" text-anchor="middle" fill="#6b7280" font-size="9">Ontario Reg 854</text>
+  <text x="703" y="391" text-anchor="middle" fill="#6b7280" font-size="9">Northern ON context</text>
+  <text x="703" y="405" text-anchor="middle" fill="#6b7280" font-size="8">data/safety_refs/</text>
+
+  <!-- STORAGE LAYER -->
+  <rect x="110" y="442" width="660" height="76" rx="8" fill="#1f1f1f" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="440" y="466" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold">TiDB Cloud — Audit Trail</text>
+  <text x="220" y="486" text-anchor="middle" fill="#9ca3af" font-size="9">vision_json</text>
+  <text x="330" y="486" text-anchor="middle" fill="#9ca3af" font-size="9">zone_compliance</text>
+  <text x="440" y="486" text-anchor="middle" fill="#9ca3af" font-size="9">nemotron_action</text>
+  <text x="560" y="486" text-anchor="middle" fill="#9ca3af" font-size="9">provider_info</text>
+  <text x="660" y="486" text-anchor="middle" fill="#9ca3af" font-size="9">timestamp</text>
+  <text x="440" y="504" text-anchor="middle" fill="#6b7280" font-size="8">SQLite fallback for local dev · MySQL/TiDB in production · northernguard cluster</text>
+
+  <!-- ARROWS -->
+  <defs>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f97316"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <line x1="170" y1="170" x2="170" y2="205" stroke="#f97316" stroke-width="1.5" marker-end="url(#arrow-orange)"/>
+  <line x1="170" y1="205" x2="340" y2="240" stroke="#f97316" stroke-width="1.5"/>
+  <line x1="325" y1="170" x2="325" y2="205" stroke="#f97316" stroke-width="1.5" marker-end="url(#arrow-orange)"/>
+  <line x1="325" y1="205" x2="380" y2="240" stroke="#f97316" stroke-width="1.5"/>
+  <line x1="380" y1="278" x2="220" y2="322" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <line x1="258" y1="366" x2="286" y2="366" stroke="#f97316" stroke-width="1.5" marker-end="url(#arrow-orange)"/>
+  <line x1="434" y1="366" x2="462" y2="366" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrow-amber)"/>
+  <line x1="638" y1="366" x2="610" y2="366" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow-gray)" stroke-dasharray="4,3"/>
+  <line x1="430" y1="278" x2="430" y2="442" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-red)"/>
+  <line x1="520" y1="240" x2="680" y2="126" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <line x1="770" y1="442" x2="795" y2="170" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-blue)"/>
+  <line x1="536" y1="322" x2="490" y2="278" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrow-amber)"/>
+
+  <!-- Legend -->
+  <circle cx="120" cy="531" r="3" fill="#10b981"/>
+  <text x="128" y="535" fill="#6b7280" font-size="8">Vision detection</text>
+  <circle cx="210" cy="531" r="3" fill="#f97316"/>
+  <text x="218" y="535" fill="#6b7280" font-size="8">Zone compliance</text>
+  <circle cx="310" cy="531" r="3" fill="#f59e0b"/>
+  <text x="318" y="535" fill="#6b7280" font-size="8">Reasoning</text>
+  <circle cx="390" cy="531" r="3" fill="#3b82f6"/>
+  <text x="398" y="535" fill="#6b7280" font-size="8">UI response</text>
+  <circle cx="470" cy="531" r="3" fill="#ef4444"/>
+  <text x="478" y="535" fill="#6b7280" font-size="8">Audit write</text>
+  <line x1="540" y1="531" x2="558" y2="531" stroke="#6b7280" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="563" y="535" fill="#6b7280" font-size="8">Context / read</text>
+</svg>

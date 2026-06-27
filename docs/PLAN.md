@@ -13,8 +13,6 @@
 
 Northern Shift Guard is an explainable AI safety system for Northern Ontario mining sites that uses computer vision to detect PPE non-compliance and fatigue risk, checks each detection against zone-specific PPE requirements, Nemotron to reason over that evidence and recommend prioritized supervisor actions tailored to the selected zone, and a SQLite audit log so every flagged decision is traceable — not a black box.
 
-**Your edge (from resume):** detection + structured reasoning + explainable evidence — same narrative as MalariAI / SciRet, applied to industrial safety.
-
 ---
 
 ## Problem
