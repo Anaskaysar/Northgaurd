@@ -1,0 +1,3 @@
+# Root requirements for Render / pip installs from repo root.
+# Backend deps live in backend/requirements.txt (single source of truth).
+-r backend/requirements.txt
