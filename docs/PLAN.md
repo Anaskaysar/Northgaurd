@@ -1,9 +1,11 @@
 # Northern Shift Guard — Master Plan
 
+> **Hackathon complete.** 🥈 2nd Place Overall · 🧠 Best Use of Nemotron — [Winners gallery](https://cheickis.github.io/cursor-hackathon-sudbury-2026/winners/#gallery). For final showcase status, see the [root README](../README.md).
+
 **Team:** NorthMind  
 **Category:** Mining & Industrial Innovation  
 **Event:** Cursor Hackathon Sudbury 2026 — Build the North  
-**Deadline:** 4:00 PM (June 27)  
+**Deadline:** 4:00 PM (June 27) — **submitted**  
 **Workspace:** All work stays in `Cursor_Hackathon/`  
 **Stack:** FastAPI + React + Jupyter notebook for model work
 
@@ -82,8 +84,9 @@ flowchart TD
 | Zone-aware compliance | Done | 5 zones in `backend/config/zones.json`; per-item compliance panel in UI |
 | Frontend | Done | Zone selector + detection + compliance + Nemotron action + audit trail |
 | Sample images | Done | pass / fail / fatigue demo photos in `sample_images/` |
-| Deployment | In progress | Docker + Render blueprint (`Dockerfile`, `render.yaml`) |
-| Submission | Pending | GitHub push, Canva pitch, Devpost, demo video |
+| Deployment | Done | Docker + Render blueprint (`Dockerfile`, `render.yaml`) |
+| Submission | Done | Devpost, pitch deck, project report, gallery media |
+| Awards | Done | 🥈 2nd Place Overall · 🧠 Best Use of Nemotron |
 
 ---
 

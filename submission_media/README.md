@@ -1,5 +1,7 @@
 # Devpost Project Media
 
+Gallery assets for **Northern Shift Guard** — 🥈 2nd Place Overall · 🧠 Best Use of Nemotron at [Cursor Hackathon Sudbury 2026](https://cheickis.github.io/cursor-hackathon-sudbury-2026/winners/#gallery).
+
 All images: **1800×1200 (3:2)**, JPG, under 5 MB.
 
 Upload in this order (cover first):

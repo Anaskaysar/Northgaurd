@@ -1,0 +1,211 @@
+NORTHERN SHIFT GUARD — MOBILE PITCH NOTES
+Team: NorthMind | Track: Mining & Industrial Innovation
+Event: Cursor Hackathon Sudbury 2026 — Build the North
+
+═══════════════════════════════════════
+ONE-LINER (open & close)
+═══════════════════════════════════════
+Explainable, zone-aware, auditable shift-start screening for Northern Ontario mines — not a black box.
+
+═══════════════════════════════════════
+SLIDE ORDER → JUDGE CRITERIA
+═══════════════════════════════════════
+
+1. COVER — 00_devpost_cover.jpg
+   Criterion 5: Presentation
+   → Title + team name
+
+2. PROBLEM — 06_mining_site_context.jpg
+   Criterion 1: Problem & track alignment
+   → Manual shift-start checks, no audit trail, Mining track
+
+3. SOLUTION — 07_app_dashboard.jpg
+   Criterion 2: Solution design & practicality
+   → Supervisor picks zone, uploads photo, gets action
+
+4. INPUTS — 02, 03, 04 (hardhat fail / pass / fatigue)
+   Criterion 7: Originality
+   → Same detection, different zone = different verdict
+
+5. LIVE DEMO — or backup 05_demo_scan_results.jpg
+   Criterion 3: Working prototype
+   → Vision → zone rules → Nemotron → audit log
+
+6. AUDIT — 08_audit_trail.jpg
+   Criteria 4 & 6: Impact + responsible design
+   → Stored evidence, timestamps, human in the loop
+
+7. CLOSE — 01_mining_hero.jpg or cover again
+   Criterion 4: Impact & feasibility
+   → Next steps + real-world path
+
+═══════════════════════════════════════
+3-MIN SPEECH (read aloud)
+═══════════════════════════════════════
+
+[OPEN]
+Good [morning/afternoon]. We're NorthMind. We built Northern Shift Guard — explainable AI safety screening for Northern Ontario mining shift starts.
+
+[PROBLEM — slide 2]
+Mines here are losing experienced workers faster than they can replace them. At shift start, supervisors check PPE and watch for fatigue — but it's manual, inconsistent, and usually not recorded.
+
+If something goes wrong later — injury, inspection, dispute — there's often no record of what was seen or why a worker was allowed on the floor. That's our problem, and it's squarely in the Mining track.
+
+[SOLUTION — slide 3]
+Our tool matches real supervisor workflow. Select the mine zone — surface, open pit, ramp, stope, plant. Each zone has different PPE rules under Ontario Reg 854. Upload a photo. You get: what was detected, zone compliance per item, a prioritized supervisor action, and a stored audit record.
+
+[DEMO — live or slide 5]
+Step 1: Zone = Active Stope. Upload worker missing hard hat.
+→ Required, not detected, non-compliant. Stop-work before underground entry.
+
+Step 2 — KEY MOMENT: Same photo. Switch to Surface / Yard.
+→ Hard hat not required. Verdict changes. Generic detectors false-alarm here.
+
+Step 3: Compliant worker in Open Pit → green pass.
+
+Step 4: Fatigue case → monitor action, not auto-removal. Screening aid only, not diagnosis.
+
+[AUDIT — slide 6]
+Every scan is logged: zone, evidence, compliance, action, timestamp. Explainable for supervisors and regulators — not one opaque score.
+
+We don't replace supervisors. Fatigue isn't medical diagnosis. Bad lighting affects vision. Production needs offline fallback — we scoped the hackathon to prove the decision pipeline.
+
+[CLOSE]
+Impact: faster, consistent, documented shift-start screening tied to zone-specific regulation.
+
+Next: webcam at cage entry, batch crew scanning, more PPE types, compliance trends.
+
+Northern Shift Guard isn't "helmet yes/no." It's: what was seen → what this zone requires → what to do now → why — with a record.
+
+Thank you.
+
+═══════════════════════════════════════
+DEMO CHEAT SHEET (if live fails)
+═══════════════════════════════════════
+
+Use 05_demo_scan_results.jpg and say:
+
+1. Active Stope + no hard hat → stop-work
+2. Surface + SAME image → hard hat not required
+3. Audit tab → persistence proof
+
+Line: "The product is the decision chain, not the bounding box."
+
+Sample images folder:
+• fail_missing_hardhat.jpg
+• pass_compliant.jpg
+• fatigue_tired_operator.jpg
+
+═══════════════════════════════════════
+ONE LINE PER JUDGE CRITERION (memorize)
+═══════════════════════════════════════
+
+1 Track alignment
+   Manual undocumented shift-start checks in Northern Ontario — Reg 854, real zone risk.
+
+2 Practicality
+   Supervisor selects zone, uploads photo, gets usable action in ~30 seconds.
+
+3 Prototype
+   Live: vision → zone compliance → Nemotron → audit — end to end.
+
+4 Impact
+   Traceable decisions cut black-box liability; enables trend reporting.
+
+5 Clear pitch
+   Problem → zone-aware solution → demo → audit → next steps.
+
+6 Limitations
+   Not diagnosis. Not replacing humans. Not site-wide surveillance.
+
+7 Originality
+   Context + reasoning on detection — same photo, different zone, different outcome.
+
+═══════════════════════════════════════
+Q&A — PROBABLE QUESTIONS & ANSWERS
+═══════════════════════════════════════
+
+Q: How is this different from regular object detection?
+
+A: Object detection asks "Is there a hard hat?"
+   We ask: "For THIS zone, can this worker proceed, what should the supervisor do, and why — with a record?"
+
+   Three layers beyond detection:
+   1. Zone compliance — same photo, different rules
+   2. Nemotron reasoning — prioritized action, not just labels
+   3. Audit log — traceable for regulated environments
+
+   Detection is step one, not the product.
+
+───────────────────────────────────────
+
+Q: Why GPT-4o vision instead of YOLO on the edge?
+
+A: YOLO is fast for boxes. Mines need plain-language evidence, fatigue cues, and reasoning supervisors trust.
+
+   Architecture is config-driven so YOLO could swap in later. Hackathon proves explainability + zone logic, not cage-side FPS.
+
+───────────────────────────────────────
+
+Q: Can fatigue detection work? Wrong calls are dangerous.
+
+A: We don't auto-ban on fatigue. We flag monitor/escalate. Screening aid only. Supervisor stays decision-maker. Production pairs with fit-for-duty protocols.
+
+───────────────────────────────────────
+
+Q: Privacy — storing worker photos?
+
+A: Shift-start checks already happen visually; we make them consistent and logged.
+
+   Production needs: retention policy, role-based access, optional on-device processing, union/consent agreements. Not open-ended site surveillance.
+
+───────────────────────────────────────
+
+Q: Bad lighting underground?
+
+A: Vision struggles in low light — we show evidence and uncertainty, not fake confidence. Production uses controlled checkpoint lighting + human override when low confidence.
+
+───────────────────────────────────────
+
+Q: Does this replace supervisors?
+
+A: No. Supports them — faster checks, consistent zone rules, documented reasoning. Nemotron output is recommendation, not automatic gate.
+
+───────────────────────────────────────
+
+Q: False positives stop production.
+
+A: Zone rules prevent that. Global "no hard hat" would block surface workers. We tie alerts to zone requirements.
+
+───────────────────────────────────────
+
+Q: What if API goes down at shift change?
+
+A: Valid concern. MVP proves pipeline. Production needs queued offline mode, cached zone rules, optional local vision. Won't ship cloud-only without fallback.
+
+───────────────────────────────────────
+
+Q: API cost at scale?
+
+A: Shift-start is batch at cage time — hundreds of photos per shift, not 24/7 video. Cost manageable vs incident cost. Batching/analytics on roadmap.
+
+───────────────────────────────────────
+
+Q: What's actually original?
+
+A: Not "we detect PPE." It's zone-aware compliance + reasoning + audit for Ontario mining. Demo proof: same image, different zone, different verdict.
+
+═══════════════════════════════════════
+60-SEC ELEVATOR (if time is cut)
+═══════════════════════════════════════
+
+Northern Shift Guard helps mining supervisors at shift start. Pick the zone, upload a photo, get zone-specific PPE compliance, a clear supervisor action, and an audit record.
+
+Same worker photo can pass on surface and fail in active stope — because rules change by zone. That's what separates us from a regular detector.
+
+We built it end to end: FastAPI, React, GPT-4o vision, Nemotron reasoning, audit storage. Fatigue is screening only. Humans stay in charge.
+
+Impact: documented, explainable safety decisions instead of black-box glances. Thank you.
+
+═══════════════════════════════════════
+END
