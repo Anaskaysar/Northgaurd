@@ -196,8 +196,8 @@ Open http://localhost:8000
 
 | | |
 |---|---|
-| **Kaysarul Anas Apurba** | Explainable AI · backend · Nemotron integration |
-| **Kazeem Oguntade** | Vision pipeline · frontend · demo |
+| **Kaysarul Anas Apurba** | Full project build — explainable AI architecture, backend, Nemotron integration, zone compliance engine, Docker deployment |
+| **Kazeem Oguntade** | Ideation, pitch strategy, presentation & demo delivery |
 
 ---
 
