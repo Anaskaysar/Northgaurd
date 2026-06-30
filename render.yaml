@@ -1,11 +1,17 @@
 services:
   - type: web
     name: northern-shift-guard
+    # Use Docker so the frontend is built and Python 3.11 from the Dockerfile is used.
+    # Do not switch this service to "Python" on Render — the default runtime is 3.14 and
+    # pydantic-core 2.18.2 cannot build on it.
     runtime: docker
     dockerfilePath: ./Dockerfile
+    dockerContext: .
     plan: free
     healthCheckPath: /health
     envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.11"
       - key: OPENAI_API_KEY
         sync: false
       - key: VISION_PROVIDER
